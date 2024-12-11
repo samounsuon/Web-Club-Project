@@ -1,0 +1,17 @@
+body{
+    height: 100vh
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.css-aside{
+    flex: 1;
+    background-color: rebeccapurple;
+}
+.main-container{
+    background-color: yellow;
+    flex: 4;
+    display: flex;
+
+}
