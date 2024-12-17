@@ -5,27 +5,23 @@
     <meta name="viewp id=""ort" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <scrip id=""t defer src="../js/main.js"></scrip id=""t>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <aside class="css-aside">
-            <p id="css-color">CSS color</p id="">
-            <p id="css-height">CSS Height/Width</p id="">
-            <p id="css-backgorund">CSS Background</p id="">
-            <p id="css-margin">CSS Margin</p id="">
-            <p id="css-padding">CSS Padding</p id="">
-            <p id="css-border">CSS Border</p id="">
-            <p id="css-justify">CSS Disp Justify</p id="">
-        </aside>
-        <main class="main-container">
-            <div class="card-exercise">
-                card
-            </div>
-            <div class="card-result">
-                card-result
-            </div>
-        </main>
+   
+    <div class="sidebar">
+        <a href="#" onclick="showContent('color')">CSS Color</a>
+        <a href="#" onclick="showContent('height-width')">Weidth/Hight</a>
+        <a href="#" onclick="showContent('background')">CSS Background</a>
+        <a href="#" onclick="showContent('margin')">CSS Margin</a>
+        <a href="#" onclick="showContent('padding')">CSS Padding</a>
+        <a href="#" onclick="showContent('boder')"> CSS Boder</a>
     </div>
+
+    <div class="main" id="main-content">
+        <h1>Welcome to the CSS Tutorial</h1>
+        <p>Select a topic from the left to see details here.</p>
+    </div>
+    a
 </body>
 </html>
