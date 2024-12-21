@@ -1,9 +1,9 @@
-body {
+.container {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
     height: 100vh;
+    display: flex;
 }
 .sidebar {
     width: 20%;
