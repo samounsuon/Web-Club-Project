@@ -1,0 +1,74 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+.main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Content Switching */
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
+ .cardcontent{
+    display: flex;   
+    height: 100%;
+ 
+    gap: 20px;
+    /* height: inherit; */
+    
+} 
+/* border: solid 1px ;  */
+.bothCard{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/* .cardRgiht{
+
+}  */
+.cardRgiht pre{
+    position: relative;
+    right: 150px;
+    bottom:  50px;  
+}
+.cardLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardLeft img {
+    width: 80%;
+}

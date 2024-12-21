@@ -8,4 +8,3 @@ function showContent(pageId) {
     // Show the selected page
     document.getElementById(pageId).classList.add('active');
 }
-
