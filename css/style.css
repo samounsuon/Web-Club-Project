@@ -1,89 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
-}
-nav img {
-    max-height: 40px;
-    border-radius: 10px;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-.button_navbar {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-#research {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.button {
-    display: flex;
-    gap: 10px;
-}
-.button button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.login {
-    background-color: #4CAF50;
-    color: white;
-}
-.login:hover {
-    background-color: #45a049;
-}
-.signin {
-    background-color: #008CBA;
-    color: white;
-}
-.signin:hover {
-    background-color: #007bb5;
-}
 body{
     height: 100vh
 }
 .container{
     display: flex;
-    height: 100%;
 }
-.css-aside{
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+.main {
     flex: 1;
-    background-color: rebeccapurple;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.main-container{
-    background-color: yellow;
-    flex: 4;
+.content-box{
     display: flex;
+    gap: 20px;
 
+}
+.code-box {
+    width: 90%;
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: monospace;
 }
