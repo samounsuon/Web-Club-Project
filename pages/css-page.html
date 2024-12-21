@@ -4,50 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page Switch</title>
-    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="../js/main.js"></script>
     <style>
         /* General Layout */
-        .container {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-        }
-        .sidebar {
-            width: 20%;
-            background-color: #f4f4f4;
-            border-right: 1px solid #ddd;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px;
-            margin-bottom: 5px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .sidebar a:hover {
-            background-color: #0056b3;
-        }
-        .main {
-            flex: 1;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        /* Content Switching */
-        .content {
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
+        
     </style>
 </head>
 <body>
@@ -83,7 +45,7 @@
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
-            <a href="javascript:void(0);" onclick="showContent('page1')">Html</a>
+            <a href="javascript:void(0);" onclick="showContent('page1')">CSS Color</a>
             <a href="javascript:void(0);" onclick="showContent('page2')">Page 2</a>
             <a href="javascript:void(0);" onclick="showContent('page3')">Page 3</a>
             <a href="javascript:void(0);" onclick="showContent('Margin')">Margin</a>
@@ -103,8 +65,34 @@
         <div class="main">
             <!-- Page 1 -->
             <div id="page1" class="content active">
-                <h1>Welcome to Page 1</h1>
-                <p>This is the content of the first page.</p>
+                <h1>Colors Tutorial</h1>
+                <p>Colors are displayed combining RED, GREEN, and BLUE light.</p>
+                <div class="cardcontent">
+                  <div class="bothCard cardRgiht">
+                      <pre><!DOCTYPE html>
+                        <p>
+                          &lt;!DOCTYPE html&gt;
+                          &lt;html&gt;
+                          &lt;style&gt;
+                              div {height:50px;width:100%;}
+                          &lt;/style&gt;
+                          &lt;body&gt;
+                          &lt;div style="background-color:#ff0000"&gt;&lt;/div&gt;
+                          &lt;div style="background-color:#ffff00"&gt;&lt;/div&gt;
+                          &lt;div style="background-color:#00ff00"&gt;&lt;/div&gt;
+                          &lt;div style="background-color:#00ffff"&gt;&lt;/div&gt;
+                          &lt;div style="background-color:#0000ff"&gt;&lt;/div&gt;
+                          &lt;/body&gt;
+                          &lt;/html&gt;
+                      </p>
+                        </body>
+                        </html>
+                      </pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/color.png" alt="">
+                  </div>
+                </div>
             </div>
             <div id="page2" class="content">
                 <h1>Welcome to Page 2</h1>
