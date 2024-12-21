@@ -1,7 +1,8 @@
-body{
-    height: 100vh
-}
-.container{
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
 }
 .sidebar {
@@ -29,17 +30,45 @@ body{
     padding: 20px;
     box-sizing: border-box;
 }
-.content-box{
-    display: flex;
-    gap: 20px;
 
+/* Content Switching */
+.content {
+    display: none;
 }
-.code-box {
-    width: 90%;
-    background-color: #f9f9f9;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+.content.active {
+    display: block;
+}
+ .cardcontent{
+    display: flex;   
+    height: 100%;
+ 
+    gap: 20px;
+    /* height: inherit; */
+    
+} 
+/* border: solid 1px ;  */
+.bothCard{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
     border-radius: 10px;
-    padding: 10px;
-    white-space: pre-wrap;
-    font-family: monospace;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/* .cardRgiht{
+
+}  */
+.cardRgiht pre{
+    position: relative;
+    right: 150px;
+    bottom:  50px;  
+}
+.cardLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardLeft img {
+    width: 80%;
 }
