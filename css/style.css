@@ -4,6 +4,7 @@
     padding: 0;
     height: 100vh;
     display: flex;
+    
 }
 .sidebar {
     width: 20%;
@@ -11,6 +12,7 @@
     border-right: 1px solid #ddd;
     padding: 10px;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 .sidebar a {
     display: block;
@@ -21,17 +23,18 @@
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
+    
 }
 .sidebar a:hover {
-    background-color: #0056b3;
+    background-color: #0056b3;  
 }
 .main {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y:     scroll;
 }
 
-/* Content Switching */
 .content {
     display: none;
 }
@@ -41,14 +44,10 @@
  .cardcontent{
     display: flex;   
     height: 100%;
- 
     gap: 20px;
-    /* height: inherit; */
-    
 } 
-/* border: solid 1px ;  */
 .bothCard{
-    /* height: inherit; */
+
     width: 48%;
     display: flex;
     justify-content: center;
@@ -56,7 +55,6 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-
 .cardLeft{
     display: flex;
     align-items: center;
