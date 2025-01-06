@@ -47,9 +47,9 @@
             <a href="javascript:void(0);" onclick="showContent('page1')">CSS Backgroundcolor</a>
             <a href="javascript:void(0);" onclick="showContent('page2')">Page 2</a>
             <a href="javascript:void(0);" onclick="showContent('page3')">Page 3</a>
-            <a href="javascript:void(0);" onclick="showContent('page4')">Page 4</a>
-            <a href="javascript:void(0);" onclick="showContent('page5')">Page 5</a>
-            <a href="javascript:void(0);" onclick="showContent('page6')">Page 6</a>
+            <a href="javascript:void(0);" onclick="showContent('Margin')">Margin</a>
+            <a href="javascript:void(0);" onclick="showContent('Padding')">Padding</a>
+            <a href="javascript:void(0);" onclick="showContent('Border')">Border</a>
             <a href="javascript:void(0);" onclick="showContent('page7')">Page 7</a>
             <a href="javascript:void(0);" onclick="showContent('page8')">Page 8</a>
             <a href="javascript:void(0);" onclick="showContent('page9')">Page 9</a>
@@ -139,28 +139,446 @@ body {
             </div>
             <!-- Page 3 -->
             <div id="page3" class="content">
-                <h1>Welcome to Page 3</h1>
-                <p>This is the content of the third page.</p>
+              <h1>Welcome to Page 3</h1>
+              <p>This is the content of the third page.</p>
+          </div>
+
+          <!-- Margin-->
+<div id="Margin" class="content">
+  <h1>Welcome to Page 4</h1>
+  <p>Margins are used to create space around elements, outside of any defined borders.</p>
+  <p>The margin property is a shorthand property for the following individual margin properties:</p>
+  <div class="color">
+    <li>margin-top</li>
+    <li>margin-right</li>
+    <li>margin-bottom</li>
+    <li>margin-left</li>
+  </div>
+
+  <!-- Margin Example 1 -->
+  <h5>Margin Example 1</h5>
+  <div class="cardcontent">
+    <div class="bothCard cardRgiht">
+      <pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    border: 1px solid black;
+    margin: 25px 50px 75px;
+    background-color: lightblue;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h2&gt;The margin shorthand property - 3 values&lt;/h2&gt;
+
+  &lt;div&gt;This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.&lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p>
+      </pre>
+    </div>
+    <div class="bothCard cardLeft">
+      <img src="/imges/margin1.png" alt="Example 1">
+    </div>
+  </div>
+
+  <!-- Margin Example 2 -->
+  <h5>Margin Example 2</h5>
+  <div class="cardcontent">
+    <div class="bothCard cardRgiht">
+      <pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: lightcoral;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;Using shorthand margin property&lt;/h2&gt;
+  
+  &lt;div&gt;This div element has a margin of 50px on all sides.&lt;/div&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p>
+      </pre>
+    </div>
+    <div class="bothCard cardLeft">
+      <img src="/imges/margin2.png" alt="Example 2">
+    </div>
+  </div>
+
+  <!-- Margin Example 3 -->
+  <h5>Margin Example 3</h5>
+  <div class="cardcontent">
+    <div class="bothCard cardRgiht">
+      <pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    border: 2px solid black;
+    margin-left: 50px;
+    background-color: lightgreen;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h2&gt;Two-value margin shorthand&lt;/h2&gt;
+
+  &lt;div&gt;This div element has a top and bottom margin of 10px, and left and right margins of 20px.&lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p>
+      </pre>
+    </div>
+    <div class="bothCard cardLeft">
+      <img src="/imges/margin3.png" alt="Example 3">
+    </div>
+  </div>
+
+  <!-- Margin Example 4 -->
+  <h5>Margin Example 4</h5>
+  <div class="cardcontent">
+    <div class="bothCard cardRgiht">
+      <pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    border: 1px solid black;
+    margin-right: 50px;
+    background-color: lightpink;
+    width: 50%;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h2&gt;Centering with margin&lt;/h2&gt;
+
+  &lt;div&gt;This div element is horizontally centered using margin: 0 auto.&lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p>
+      </pre>
+    </div>
+    <div class="bothCard cardLeft">
+      <img src="/imges/margin4.png" alt="Example 4">
+    </div>
+  </div>
+
+  <!-- Margin Example 5 -->
+  <h5>Margin Example 5</h5>
+  <div class="cardcontent">
+    <div class="bothCard cardRgiht">
+      <pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    border: 1px solid black;
+    margin-bottom:50px ;
+    background-color: lightyellow;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h2&gt;Percentage-based margins&lt;/h2&gt;
+
+  &lt;div&gt;This div element has top and bottom margins of 15% of the parent height and left and right margins of 10% of the parent width.&lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p>
+      </pre>
+    </div>
+    <div class="bothCard cardLeft">
+      <img src="/imges/margin5.png" alt="Example 5">
+    </div>
+  </div>
+</div>
+
+
+
+
+            <!-- Padding-->
+            <div id="Padding" class="content">
+              <h1>Welcome to Page 5</h1>
+              <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+              <p>CSS has properties for specifying the padding for each side of an element:</p>
+              <div class="color">
+                <li>Padding-top</li>
+                <li>Padding-right</li>
+                <li>Padding-bottom</li>
+                <li>Padding-left</li>
+              </div>
+            
+              <!-- Padding Example 1 -->
+              <h5>Padding Example 1</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRgiht">
+                  <pre>
+            <p>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;style&gt;
+              div {
+                border: 1px solid black;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                padding-right: 150px;
+                padding-left: 80px;
+                background-color: lightblue;
+              }
+              &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+            
+              &lt;h2&gt;Using individual padding properties&lt;/h2&gt;
+            
+              &lt;div&gt;This div element has a top padding of 100px, a right padding of 150px, a bottom padding of 100px, and a left padding of 80px.&lt;/div&gt;
+            
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </p>
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/padding1.png" alt="Example 1">
+                </div>
+              </div>
+            
+              <!-- Padding Example 2 -->
+              <h5>Padding Example 2</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRgiht">
+                  <pre>
+            <p>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;style&gt;
+              div {
+                border: 1px solid black;
+                padding-top: 50px;
+                background-color: lightcoral;
+              }
+              &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+            
+              &lt;h2&gt;The padding shorthand property - 1 values&lt;/h2&gt;
+            
+              &lt;div&gt;This div element has a top padding of 50px.&lt;/div&gt;
+            
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </p>
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/padding2.png" alt="Example 2">
+                </div>
+              </div>
+            
+              <!-- Padding Example 3 -->
+              <h5>Padding Example 3</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRgiht">
+                  <pre>
+            <p>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;style&gt;
+              div {
+                border: 1px solid black;
+                padding-right: 50px;
+                background-color: lightgreen;
+              }
+              &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+            
+              &lt;h2&gt;The padding shorthand property - 1 values&lt;/h2&gt;
+            
+              &lt;div&gt;This div element has a  padding-right of 50px&lt;/div&gt;
+            
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </p>
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/padding3.png" alt="Example 3">
+                </div>
+              </div>
+            
+              <!-- Padding Example 4 -->
+              <h5>Padding Example 4</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRgiht">
+                  <pre>
+            <p>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;style&gt;
+              div {
+                border: 1px solid black;
+                padding-buttom: 50px;
+                background-color: lightyellow;
+              }
+              &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+            
+              &lt;h2&gt;The padding shorthand property - 1 values&lt;/h2&gt;
+            
+              &lt;div&gt;This div element has a  padding-buttom of 50px.&lt;/div&gt;
+            
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </p>
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/padding4.png" alt="Example 4">
+                </div>
+              </div>
+            
+              <!-- Padding Example 5 -->
+              <h5>Padding Example 5</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRgiht">
+                  <pre>
+            <p>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;style&gt;
+              div {
+                border: 2px solid black;
+                padding-left: 50px;
+                background-color: lightpink;
+              }
+              &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+            
+              &lt;h2&gt;Using percentage-based padding&lt;/h2&gt;
+            
+              &lt;div&gt;This div element has 15% padding on all sides, based on the parent element's dimensions.&lt;/div&gt;
+            
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </p>
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/padding5.png" alt="Example 5">
+                </div>
+              </div>
             </div>
-            <!-- Page 4 -->
-            <div id="page4" class="content">
-                <h1>Welcome to Page 4</h1>
-                <p>This is the content of the fourth page.</p>
-            </div>
-            <!-- Page 5 -->
-            <div id="page5" class="content">
-                <h1>Welcome to Page 5</h1>
-                <p>This is the content of the fifth page.</p>
-            </div>
-            <!-- Page 6 -->
-            <div id="page6" class="content">
-                <h1>Welcome to Page 6</h1>
-                <p>This is the content of the sixth page.</p>
-            </div>
+            
+            <!-- Border-->
+            <div id="Border" class="content">
+              <h1>Welcome to Page 6</h1>
+              <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+              <p>The border-style property specifies what kind of border to display.
+
+               <br> The following values are allowed:
+                <div class="color">
+                  <li> dotted - Defines a dotted border</li>
+                  <li> dashed - Defines a dashed border</li>
+                  <li> solid - Defines a solid border</li>
+                  <li>double - Defines a double border</p></li>
+                  <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</p></li>
+                  <li>  ridge - Defines a 3D ridged border. The effect depends on the border-color value</p></li>
+                  <li>inset - Defines a 3D inset border. The effect depends on the border-color valuet</p></li>
+                  <li>outset - Defines a 3D outset border. The effect depends on the border-color value</p></li>
+                  <li>none - Defines no border</p></li>
+                </div>
+                  <li>Padding-left</p></li>
+                <div class="cardcontainer">
+                  <h5>Border</h5>
+                  <div class="cardcontent">
+                    <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;h2&gt;The border-style Property&lt;/h2&gt;
+  &lt;p&gt;This property specifies what kind of border to display:&lt;/p&gt;
+  
+  &lt;p class=&quot;dotted&quot;&gt;A dotted border.&lt;/p&gt;
+  &lt;p class=&quot;dashed&quot;&gt;A dashed border.&lt;/p&gt;
+  &lt;p class=&quot;solid&quot;&gt;A solid border.&lt;/p&gt;
+  &lt;p class=&quot;double&quot;&gt;A double border.&lt;/p&gt;
+  &lt;p class=&quot;groove&quot;&gt;A groove border.&lt;/p&gt;
+  &lt;p class=&quot;ridge&quot;&gt;A ridge border.&lt;/p&gt;
+  &lt;p class=&quot;inset&quot;&gt;An inset border.&lt;/p&gt;
+  &lt;p class=&quot;outset&quot;&gt;An outset border.&lt;/p&gt;
+  &lt;p class=&quot;none&quot;&gt;No border.&lt;/p&gt;
+  &lt;p class=&quot;hidden&quot;&gt;A hidden border.&lt;/p&gt;
+  &lt;p class=&quot;mix&quot;&gt;A mixed border.&lt;/p&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+  
+</p></pre>
+                    </div>
+                    <div class="bothCard cardLeft">
+                       <img src="/imges/border.png" alt="">
+                    </div>
+                  </div>
+              </div>
+              </div>
+           
             <!-- Page 7 -->
             <div id="page7" class="content">
-                <h1>Welcome to Page 7</h1>
-                <p>This is the content of the seventh page.</p>
+              <h1>Welcome to Page 7</h1>
+              <p>This is the content of the ninth page.</p>
+          </div>
+
             </div>
             <!-- Page 8 -->
             <div id="page8" class="content">
