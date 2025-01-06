@@ -45,7 +45,7 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <a href="javascript:void(0);" onclick="showContent('page1')">CSS Backgroundcolor</a>
-            <a href="javascript:void(0);" onclick="showContent('page2')">Page 2</a>
+            <a href="javascript:void(0);" onclick="showContent('page2')">CSS Height/Width</a>
             <a href="javascript:void(0);" onclick="showContent('page3')">Page 3</a>
             <a href="javascript:void(0);" onclick="showContent('page4')">Page 4</a>
             <a href="javascript:void(0);" onclick="showContent('page5')">Page 5</a>
@@ -57,7 +57,9 @@
         </div>
         
         <div class="main">
-            <div id="page1" class="content active">
+<!-- background -->
+
+            <div id="page1" class="content active Backgroundcolor">
                 <h1>CSS background Property</h1>
                 <h4>Definition and Usage</h4>
                 <div class="content-text">
@@ -128,14 +130,253 @@ body {
                     </div>
                   </div>
               </div>
+<!-- backgroud position -->
+              <div class="cardcontainer">
+                <h5> Background Position</h5>
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  body { 
+    background-image: url(&#39;paper.gif&#39;);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
 
+  &lt;h1&gt;The background-position Property&lt;/h1&gt;
+  &lt;p&gt;Here, the background image will be positioned in the center of the element (in this case, the body element).&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/background-position.png" alt="">
+                  </div>
                 </div>
+            </div>
+<!-- background-zise -->
+              <div class="cardcontainer">
+                <h5> Background-zise</h5>
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  body { 
+    background-image: url(&#39;paper.gif&#39;);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;h1&gt;The background-position Property&lt;/h1&gt;
+  &lt;p&gt;Here, the background image will be positioned in the center of the element (in this case, the body element).&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/background-size.png" alt="">
+                  </div>
+                </div>
+            </div>
+<!--background-repeat-->
+              <div class="cardcontainer">
+                <h5> Background-repeat</h5>
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  body { 
+    background-image: url(&#39;paper.gif&#39;);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;h1&gt;The background-position Property&lt;/h1&gt;
+  &lt;p&gt;Here, the background image will be positioned in the center of the element (in this case, the body element).&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/backgrond-repeat.png" alt="">
+                  </div>
+                </div>
+            </div>
+<!-- Background origin -->
+              <div class="cardcontainer">
+                <h5> Background-origin</h5>
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  body { 
+    background-image: url(&#39;paper.gif&#39;);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;h1&gt;The background-position Property&lt;/h1&gt;
+  &lt;p&gt;Here, the background image will be positioned in the center of the element (in this case, the body element).&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/background-origin.png" alt="">
+                  </div>
+                </div>
+            </div>
+<!-- backgroud- clip -->
+              <div class="cardcontainer">
+                <h5> Background-origin</h5>
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  #example1 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: border-box;  
+  }
+
+  #example2 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: padding-box;
+  }
+
+  #example3 {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: content-box;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;h1&gt;The background-clip Property&lt;/h1&gt;
+
+  &lt;p&gt;The background-clip property defines how far the background should extend within an element.&lt;/p&gt;
+
+  &lt;p&gt;background-clip: border-box (this is default):&lt;/p&gt;
+  &lt;div id=&quot;example1&quot;&gt;
+    &lt;p&gt;The background extends behind the border.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;background-clip: padding-box:&lt;/p&gt;
+  &lt;div id=&quot;example2&quot;&gt;
+    &lt;p&gt;The background extends to the inside edge of the border.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;background-clip: content-box:&lt;/p&gt;
+  &lt;div id=&quot;example3&quot;&gt;
+    &lt;p&gt;The background extends to the edge of the content box.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt; 
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/backgournd-clib.png" alt="">
+                  </div>
+                </div>
+            </div>
+
+                </div>  
+<!--  whidth / height-->
+                
             <div id="page2" class="content">
-                <h1>Welcome to Page 2</h1>
-                <p>This is the content of the second page.</p>
-                <div>
-                    <h2>Web Club</h2>
+              <h1>CSS Height, Width</h1>
+              <h4>The CSS height and width properties are used to set the height and width of an element.</h4>
+              <div class="content-text">
+                <ul> 
+                  <li> <a href="">auto </a> - This is default. The browser calculates the height and width. </li>
+                  <li><a href="">length</a> -  Defines the height/width in px, cm, etc.</li>
+                  <li>  <a href="">% </a>  - Defines the height/width in percent of the containing block.</li>
+                  <li><a href="">initial</a> - Sets the height/width to its default value.</li>
+                  <li><a href="">inherit</a>- The height/width will be inherited from its parent value.</li>
+                </ul>
+              </div>
+<!-- whith auto -->
+              <div class="cardcontainer">
+                <!-- <h5> Auto</h5> -->
+                <div class="cardcontent">
+                  
+                  <div class="bothCard cardRgiht">
+<pre>
+<p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h2&gt;Set the height and width of an element&lt;/h2&gt;
+  &lt;div&gt;This div element has a height of 200px and a width of 50%.&lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/wiedth-auto.png" alt="">
+                  </div>
                 </div>
+            </div>
+
+
+
+
             </div>
             <!-- Page 3 -->
             <div id="page3" class="content">
