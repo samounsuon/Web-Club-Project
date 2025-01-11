@@ -81,38 +81,10 @@ span {
     width: 60%;
     height: 60%;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stacks sidebar and main vertically */
-    }
-    .sidebar {
-        width: 100%; /* Full width for smaller screens */
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-    .main {
-        padding: 10px;
-    }
-    .cardcontent {
-        gap: 10px; /* Smaller gap for compact layout */
-    }
-    .bothCard {
-        width: 100%; /* Full width for cards */
-        margin-bottom: 10px; /* Add spacing between cards */
-    }
-}
-
-@media (max-width: 480px) {
-    .sidebar a {
-        font-size: 14px; /* Smaller font for smaller screens */
-        padding: 8px;
-    }
-    .main {
-        padding: 5px;
-    }
-    .bothCard {
-        width: 100%;
-    }
+.cardcontainer  {
+    padding: 0px 0px 50px 0px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 30px;
+    padding: 20px  20px ;
+    border-radius: 10px;
 }
