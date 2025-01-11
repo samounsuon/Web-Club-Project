@@ -757,81 +757,168 @@ body {
             
             <!-- Border-->
             <div id="page5" class="content">
-              <h1>Welcome to Page 5</h1>
+              <h1>Welcome to Page 6</h1>
               <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
               <p>The border-style property specifies what kind of border to display.</p>
-      
-              <br> The following values are allowed:
+              <br>
+              <H2>The following values are allowed:</H2>
               <div class="color">
-                  <li> dotted - Defines a dotted border</li>
-                  <li> dashed - Defines a dashed border</li>
-                  <li> solid - Defines a solid border</li>
-                  <li>double - Defines a double border</p>
-                  </li>
-                  <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</p>
-                  </li>
-                  <li> ridge - Defines a 3D ridged border. The effect depends on the border-color value</p>
-                  </li>
-                  <li>inset - Defines a 3D inset border. The effect depends on the border-color valuet</p>
-                  </li>
-                  <li>outset - Defines a 3D outset border. The effect depends on the border-color value</p>
-                  </li>
-                  <li>none - Defines no border</p>
-                  </li>
+                <ul>
+                  <li>dotted - Defines a dotted border</li>
+                  <li>dashed - Defines a dashed border</li>
+                  <li>solid - Defines a solid border</li>
+                  <li>double - Defines a double border</li>
+                  <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                  <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                  <li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+                  <li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+                  <li>none - Defines no border</li>
+                </ul>
               </div>
-      
-      
-              <li>Padding-left</p>
-              </li>
-              <div class="cardcontainer">
-                  <h5>Border</h5>
-                  <div class="cardcontent">
-                      <div class="bothCard cardRgiht">
-                          <pre>
-      <p>
-      &lt;!DOCTYPE html&gt;
-      &lt;html&gt;
-      &lt;head&gt;
-      &lt;style&gt;
-      p.dotted {border-style: dotted;}
-      p.dashed {border-style: dashed;}
-      p.solid {border-style: solid;}
-      p.double {border-style: double;}
-      p.groove {border-style: groove;}
-      p.ridge {border-style: ridge;}
-      p.inset {border-style: inset;}
-      p.outset {border-style: outset;}
-      p.none {border-style: none;}
-      p.hidden {border-style: hidden;}
-      p.mix {border-style: dotted dashed solid double;}
-      &lt;/style&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-      
-      &lt;h2&gt;The border-style Property&lt;/h2&gt;
-      &lt;p&gt;This property specifies what kind of border to display:&lt;/p&gt;
-      
-      &lt;p class=&quot;dotted&quot;&gt;A dotted border.&lt;/p&gt;
-      &lt;p class=&quot;dashed&quot;&gt;A dashed border.&lt;/p&gt;
-      &lt;p class=&quot;solid&quot;&gt;A solid border.&lt;/p&gt;
-      &lt;p class=&quot;double&quot;&gt;A double border.&lt;/p&gt;
-      &lt;p class=&quot;groove&quot;&gt;A groove border.&lt;/p&gt;
-      &lt;p class=&quot;ridge&quot;&gt;A ridge border.&lt;/p&gt;
-      &lt;p class=&quot;inset&quot;&gt;An inset border.&lt;/p&gt;
-      &lt;p class=&quot;outset&quot;&gt;An outset border.&lt;/p&gt;
-      &lt;p class=&quot;none&quot;&gt;No border.&lt;/p&gt;
-      &lt;p class=&quot;hidden&quot;&gt;A hidden border.&lt;/p&gt;
-      &lt;p class=&quot;mix&quot;&gt;A mixed border.&lt;/p&gt;
-      
-      &lt;/body&gt;
-      &lt;/html&gt;
-      
-      </p></pre>
-                      </div>
-                      <div class="bothCard cardLeft">
-                          <img src="/imges/border.png" alt="">
-                      </div>
-                  </div>
+              
+              <!-- Example 1 -->
+              <h5>Example 1</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRight">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                      p.dotted {border-style: dotted;}
+                      p.dashed {border-style: dashed;}
+                      p.solid {border-style: solid;}
+                      p.double {border-style: double;}
+                      p.groove {border-style: groove;}
+                      p.ridge {border-style: ridge;}
+                      p.inset {border-style: inset;}
+                      p.outset {border-style: outset;}
+                      p.none {border-style: none;}
+                      p.hidden {border-style: hidden;}
+                      p.mix {border-style: dotted dashed solid double;}
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+                    &lt;p&gt;This property specifies what kind of border to display:&lt;/p&gt;
+                    &lt;p class=&quot;dotted&quot;&gt;A dotted border.&lt;/p&gt;
+                    &lt;p class=&quot;dashed&quot;&gt;A dashed border.&lt;/p&gt;
+                    &lt;p class=&quot;solid&quot;&gt;A solid border.&lt;/p&gt;
+                    &lt;p class=&quot;double&quot;&gt;A double border.&lt;/p&gt;
+                    &lt;p class=&quot;groove&quot;&gt;A groove border.&lt;/p&gt;
+                    &lt;p class=&quot;ridge&quot;&gt;A ridge border.&lt;/p&gt;
+                    &lt;p class=&quot;inset&quot;&gt;An inset border.&lt;/p&gt;
+                    &lt;p class=&quot;outset&quot;&gt;An outset border.&lt;/p&gt;
+                    &lt;p class=&quot;none&quot;&gt;No border.&lt;/p&gt;
+                    &lt;p class=&quot;hidden&quot;&gt;A hidden border.&lt;/p&gt;
+                    &lt;p class=&quot;mix&quot;&gt;A mixed border.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/border.png" alt="Example 1">
+                </div>
+              </div>
+            
+              <!-- Example 2 -->
+              <h5>Example 2</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRight">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                      p.solid {border-style: solid;}
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+                    &lt;p class=&quot;solid&quot;&gt;A solid border.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/border2.png" alt="Example 2">
+                </div>
+              </div>
+            
+              <!-- Example 3 -->
+              <h5>Example 3</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRight">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                      p.dotted {border-style: dotted;}
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+                    &lt;p class=&quot;dotted&quot;&gt;A dotted border.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/border4.png" alt="Example 3">
+                </div>
+              </div>
+            
+              <!-- Example 4 -->
+              <h5>Example 4</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRight">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                      div {
+                        border: 1px solid black;
+                        padding-bottom: 50px;
+                        background-color: lightyellow;
+                      }
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h2&gt;The padding shorthand property - 1 value&lt;/h2&gt;
+                    &lt;div&gt;This div element has a padding-bottom of 50px.&lt;/div&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/border4.png" alt="Example 4">
+                </div>
+              </div>
+            
+              <!-- Example 5 -->
+              <h5>Example 5</h5>
+              <div class="cardcontent">
+                <div class="bothCard cardRight">
+                  <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt;
+                      p.double {border-style: double;}
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+                    &lt;p class=&quot;double&quot;&gt;A double border.&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                  </pre>
+                </div>
+                <div class="bothCard cardLeft">
+                  <img src="/imges/border6.png" alt="Example 5">
+                </div>
               </div>
             </div>
       
