@@ -22,16 +22,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"> 
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">HTML</a>
+            <a class="nav-link" href="../pages/html-page.html">HTML</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CSS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BCU</a>
+            <a class="nav-link" href="../pages/bcu-page.html">BCU</a>
           </li>
         </ul>
         <form class="d-flex ms-lg-3">
@@ -1346,9 +1346,115 @@ body {
               <p>This is the content of the ninth page.</p>
           </div>
             <!-- Page 10 -->
-            <div id="page10" class="content">
-                <h1>Welcome to Page 10</h1>
-                <p>This is the content of the tenth page.</p>
+            <div id="page10" class="content"> 
+              <h1>CSS align-self Property</h1>
+
+
+              <h4>Definition and Usage.</h4>
+              <div class="content-text">
+                <ul> 
+                  <li>The <span>align-self</span> property specifies the alignment in the block direction for the selected item inside a flexbox or grid container.</li>
+                  <li>To align a grid item in the inline direction instead of the block direction, use <span>justify-self</span> or <span>justify-items</span> properties.</li>
+
+                  <li>The align-self property overrides the grid or flexible container's align-items property.</li>
+                </ul>
+              </div>
+              <table class="table table-hover">
+                <h2> Property Values</h2>
+                 <thead>
+                   <tr>
+                     <th>Value</th>
+                     <th>Description</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td><span>center</span></td>
+                     <td>	The element is positioned at the center of the container</td>
+                    </tr>
+                    <tr>
+                      <td><span>flex-start</span></td>
+                      <td>The element is positioned at the beginning of the container</td>
+                    </tr>
+                    <tr>
+                      <td><span>flex-end</span></td>
+                      <td>The element is positioned at the end of the container</td>
+                    </tr>
+                    <tr>
+                      <td><span>baseline</span></td>
+                      <td>The element is positioned at the baseline of the container</td>
+                    </tr>
+                    <tr>
+                      <td><span>initial</span></td>
+                      <td>	Sets this property to its default value. Read about initial</td>
+                    </tr>
+                    <tr>
+                      <td><span>inherit</span></td>
+                      <td>Inherits this property from its parent element. Read about inherit</td>
+                    </tr>
+                    <tr>
+                      <td><span>auto</span></td>
+                      <td>Default. The element inherits its parent container's align-items property, or "stretch" if it has no parent container.</td>
+                    </tr>
+                    <tr>
+                      <td><span>stretch</span></td>
+                      <td>	The element is positioned to fit the container</td>
+                    </tr>
+                    
+                 </tbody>
+               </table>
+  
+              <div class="cardcontainer">
+                <h3>justify-self: right</h3>
+              
+                <div class="cardcontent">
+                  <div class="bothCard cardRgiht">
+  <pre>
+  <p>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;style&gt;
+  #container {
+    width: 60%;
+    aspect-ratio: 3/2;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #container &gt; div {
+    width: 60%;
+    aspect-ratio: 2;
+    margin: 2px;
+  }
+  .normalDiv {
+    background-color: lightgreen;
+  }
+  #myDiv {
+    border: solid black 3px;
+    background-color: coral;
+    align-self: end;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;The align-self Property&lt;/h1&gt;
+  &lt;p&gt;Place an individual grid item at the end of its grid cell in the block direction with the align-self property.&lt;/p&gt;
+  &lt;div id=&quot;container&quot;&gt;
+    &lt;div class=&quot;normalDiv&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;myDiv&quot;&gt;myDiv&lt;/div&gt;
+    &lt;div class=&quot;normalDiv&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;normalDiv&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+    &lt;/html&gt;    
+  </p></pre>
+                  </div>
+                  <div class="bothCard cardLeft">
+                     <img src="../imges/align-self-property.png" alt="">
+                  </div>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
