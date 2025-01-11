@@ -1,0 +1,70 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Area */
+.main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main h1{
+    font-size: 4rem;
+    background: rgb(73, 67, 199);
+    background-image: linear-gradient(to top, rgb(53, 124, 237) 0%, rgb(187, 66, 163) 58%, rgb(26, 143, 189) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+
+#log-size{
+    width: 100px;
+}
+
