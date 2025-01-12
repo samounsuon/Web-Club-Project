@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Text Markup Language</title>
+    <link rel="stylesheet" href="../css/html.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/html.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img id="log-size" src="../imges/LogoPnc.png" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"> 
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html-page.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="css-page.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bcu-page.html">BCU</a>
+              </li>]
+            </ul>
+            <form class="d-flex ms-lg-3">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="bannar">
+
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <button onclick="showContent('basic')">Basic HTML</button>
+            <button onclick="showContent('heading')">HTML Heading</button>
+            <button onclick="showContent('attributes')">HTML Attributes</button>
+            <button onclick="showContent('element')">HTML Elements</button>
+            <button onclick="showContent('link')">HTML Links</button>
+            <button onclick="showContent('lists')">HTML Lists</button>
+            <button onclick="showContent('classes')">HTML Classes</button>
+            <button onclick="showContent('id')">HTML ID</button>
+            <button onclick="showContent('form')">HTML Form</button>
+            <button onclick="showContent('divtag')">HTML Div</button>
+            <button onclick="showContent('table')">HTML Table</button>
+        </div>
+        <div class="right-side">
+    
+            <div id="basic" class="content active">
+                <div class="example">
+                    <h1>Basic HTML</h1>
+                    <h2>HTML Tags Table</h2>
+                    <p>Basic HTML (HyperText Markup Language) is the foundational language used to create and structure content on the web.</p>
+                </div>
+                <div class="ordered-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Syntax</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;title&gt;</code> my title <code>&lt;/title&gt;</code>	</td>
+                                <td>Tag used to specify the title of the webpage which appears in the browser's tab.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;head&gt;</code>...<code>&lt;/head&gt;</code></td>
+                                <td>Tag used to contain metadata and links to external files like stylesheets or scripts.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;img src="###" alt="###"&gt;</code></td>
+                                <td>Tag used to display an image. Required attributes: src (path to image) and alt (alternative text).</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;h1&gt; ... &lt;/h1&gt;</code><br>
+                                    <code>&lt;h2&gt; ... &lt;/h2&gt;</code><br>
+                                    <code>&lt;h3&gt; ... &lt;/h3&gt;</code><br>
+                                    <code>&lt;h4&gt; ... &lt;/h4&gt;</code><br>
+                                    <code>&lt;h5&gt; ... &lt;/h5&gt;</code><br>
+                                    <code>&lt;h6&gt; ... &lt;/h6&gt;</code>
+                                </td>
+                                <td>Tags for headings. <code>&lt;h1&gt;</code> is the largest, <code>&lt;h6&gt;</code> is the smallest.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;p&gt; ... &lt;/p&gt;</code></td>
+                                <td>Tag used for paragraphs. It defines a block of text.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;strong&gt; ... &lt;/strong&gt;</code></td>
+                                <td>Tag used to emphasize important text (usually rendered as bold).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ordered-list">
+                    <h1>Easy Learning with HTML "Try it Yourself"</h1>
+                    <p>If you want to make the title more descriptive so that users can easily understand it's an example of a tag, you can set up a title for the example and follow it with a clear description. Here is how you could do that:</p>
+                </div>
+            </div>
+    
+            <div id="heading" class="content">
+                <div class="example">
+                    <h1>HTML Heading</h1>
+                    <h4>HTML headings are titles or subtitles that you want to display on a webpage.</h4>
+                    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
+                </div>
+                <div class="un-or">
+                    <div class="unordered">
+                        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+    
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    
+        &lt;/body&gt;
+        &lt;/html&gt;
+                        </pre>
+                    </div>
+                    <div class="ordered">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+    
+                </div>
+                <strong>Note:
+                    <ul>
+                        <li>Browsers automatically add some white space (a margin) before and after a heading.</li>
+                        <li>Headings Are Important for search engines use the headings to index the structure and content of your web pages.</li>
+                        <li>Users often skim a page by its headings. It is important to use headings to show the document structure.</li>
+                        <li><code>&lt;h1&gt;</code> headings should be used for main headings, followed by <code>&lt;h2&gt;</code> headings, then the less important <code>&lt;strong&gt;</code>, and so on.</li>
+                        <li>Use HTML headings for headings only. Don't use headings to make text BIG or bold.</li>
+                    </ul>
+                </strong>
+            </div>
+    
+            <div id="attributes" class="content">
+                <div class="example">
+                    <h1>HTML Attributes</h1>
+                    <h2>What are HTML Attributes?</h2>
+                    <p>HTML attributes provide additional information about HTML elements. They modify the behavior or appearance of the elements they are applied to. Attributes are always written in the opening tag of an element and usually come in name-value pairs.</p>
+                </div>
+                <div class="ordered-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>HTML elements</th>
+                                <th>Use</th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;div id="html"&gt;&lt;/div&gt;</code></td>
+                                <td>Assigns a unique identifier to an element for styling or scripting</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;div class="html"&gt;&lt;/div&gt;</code></td>
+                                <td>Groups elements for styling or scripting.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;style&gt;&lt;/style&gt;</code></td>
+                                <td>Adds inline CSS styling to an element</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;script src=""&gt;&lt;/script&gt;</code></td>
+                                <td>Specifies the source URL for images, videos, or scripts</td>
+                            </tr>
+                        </thead>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+    
+            <div id="element" class="content">
+                <div class="example">
+                    <h1>HTML Elements</h1>
+                    <h2>HTML elements are the building blocks of web pages, and they represent content and structure.</h2>
+                    <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+                </div>
+                <div class="ordered-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>HTML elements</th>
+                                <th>Use</th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;div&gt;&lt;/div&gt;</code></td>
+                                <td>A container for grouping elements, often used with CSS for layout design.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;span&gt;&lt;/span&gt;</code></td>
+                                <td>Inline container for styling a part of text.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;form&gt;&lt;/form&gt;</code></td>
+                                <td>To create input forms for collecting user data.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;nav&gt;&lt;/nav&gt;</code></td>
+                                <td>For navigation links.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;header&gt;&lt;/header&gt;</code> <br>
+                                    <code>&lt;footer&gt;&lt;/footer&gt;</code></td>
+                                <td>For content at the top and bottom of a page.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;button&gt;&lt;/button&gt;</code></td>
+                                <td>To create clickable buttons.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;input&gt;</code></td>
+                                <td>To create input fields (text, number, checkbox, etc.).</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;img&gt;</code></td>
+                                <td>To display images.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;video&gt;&lt;/video&gt;</code></td>
+                                <td>To embed videos.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;section&gt;&lt;/section&gt;</code></td>
+                                <td>To define a section in a document.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+                                <td>To create hyperlinks.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;ul&gt;&lt;/ul&gt;</code><br>
+                                    <code>&lt;ol&gt;&lt;/ol&gt;</code></td>
+                                <td>To create unordered (
+                                    ) and ordered (
+                                    ) lists.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;article&gt;&lt;/article&gt;</code></td>
+                                <td>For self-contained content like a blog post or news article.</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <td><code>&lt;aside&gt;&lt;/aside&gt;</code></td>
+                                <td>For sidebars or content related to the main content.</td>
+                            </tr>
+                        </thead>
+                    </tbody>
+                </table>
+                <strong>Note: Use it to make your website look clean. It have more than that...</strong>
+                </div>
+            </div>
+    
+            <div id="link" class="content">
+                <div class="example">
+                    <h1>HTML Links</h1>
+                    <h2>What Are HTML Links?</h2>
+                    <p>HTML links, also known as hyperlinks, allow users to navigate from one page to another. Clicking on a link jumps you to another document or section of a document.</p>
+                    <p>When you hover over a link, the cursor changes to a hand icon. Links are not limited to text—they can also be images or other HTML elements.</p>
+                    <div class="ordered-list">
+                        <h1>HTML Links Syntax</h1>
+                        <div class="ordered-list">
+                            <p>The <code>&lt;a&gt;</code> tag defines a hyperlink. Here's the basic syntax:</p>
+                            <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+                        </div>
+                        <div class="ordered-list">
+                            <p>The href attribute specifies the destination URL, and the link text is what users see and click.</p>
+                            <p>By default, links appear as follows:</p>
+                            <li>Unvisited link: Blue and underlined</li>
+                            <li>Visited link: Purple and underlined</li>
+                            <li>Active link: Red and underlined</li>
+                        </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>HTML Links - The target Attribute</h1>
+                        <p>The target attribute defines where to open the linked document:</p>
+                        <li>self - Default. Opens in the same tab.</li>
+                        <li>blank - Opens in a new tab or window.</li>
+                        <li>parent - Opens in the parent frame.</li>
+                        <li>top - Opens in the full browser window.</li>
+                        <div class="example">
+                            <h2>Example</h2>
+                            <div class="ordered-list">
+                                <code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>Using an Image as a Link</h1>
+                        <p>Wrap an <img> tag inside an <a> tag to create an image link:</p>
+                            <div class="example">
+                                <h2>Example</h2>
+                                <code>&lt;a href="https://example.com"&gt;&lt;img src="image.jpg" alt="Example"&gt;&lt;/a&gt;</code>
+                            </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>Linking to an Email Address</h1>
+                        <p>Use the mailto: scheme in the href attribute to create an email link:</p>
+                        <div class="example">
+                            <h2>Example</h2>
+                            <code>&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;</code>
+                        </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>Using a Button as a Link</h1>
+                        <p>HTML buttons can act as links using JavaScript:</p>
+                        <div class="example">
+                            <h2>Example</h2>
+                            <code>&lt;button onclick="window.location.href='https://example.com';"&gt;&lt;/button&gt;</code>
+                        </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>Link Titles</h1>
+                        <p>The title attribute adds extra information about a link, often displayed as a tooltip:</p>
+                        <div class="example">
+                            <h2>Example</h2>
+                            <code>&lt;a href="https://example.com" title="Visit Example"&gt;Hover over me&lt;/a&gt;</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="lists" class="content">
+              <h1>HTML Lists</h1>
+              <p>
+                HTML lists allow web developers to group a set of related items in
+                lists.
+              </p>
+              <div class="example">
+                <h2>Example</h2>
+                <div class="un-or">
+                  <div class="unordered">
+                    <h3>An unordered HTML list:</h3>
+                    <ul>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ul>
+                  </div>
+                  <div class="ordered">
+                    <h3>An ordered HTML list:</h3>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="ordered-list">
+                <h2>Unordered HTML List</h2>
+                <p>
+                  An unordered list starts with the <code>&lt;ul&gt;</code> tag.
+                  Each list item starts with the <code>&lt;li&gt;</code> tag.
+                </p>
+                <p>
+                  The list items will be marked with bullets (small black circles)
+                  by default:
+                </p>
+                <pre>
+        &lt;ul&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+        &lt;/ul&gt;
+    </pre>
+                <div class="unorder-items">
+                    <h2>Unordered HTML List - Choose List Item Marker</h2>
+                    <p>The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:</p>
+                    <h2>List Style Type Values</h2>
+                    <table>
+                        <tr>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>disc</td>
+                            <td>Sets the list item marker to a bullet (default)</td>
+                        </tr>
+                        <tr>
+                            <td>circle</td>
+                            <td>Sets the list item marker to a circle</td>
+                        </tr>
+                        <tr>
+                            <td>square</td>
+                            <td>Sets the list item marker to a square</td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td>The list items will not be marked</td>
+                        </tr>
+                    </table>
+                    <div class="items-example">
+                        <h3>Example - Disc</h3>
+    <pre>
+       <code>&lt;ul style="list-style-type:none;"&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+        &lt;/ul&gt;</code>
+    </pre>
+                    </div>
+                    
+                </div>
+                <strong>Note: A list item <code>&lt;li&gt;</code> can contain a new list, and other HTML elements, like images and links, etc.</strong>
+              </div>
+              <div class="ordered-list">
+                <h2>Ordered HTML List</h2>
+                <p>An ordered list starts with the <code>&lt;ol&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.</p>
+                <p>The list items will be marked with numbers by default:</p>
+    <pre>
+    &lt;ol&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+        &lt;li&gt;Fourth item&lt;/li&gt;
+    &lt;/ol&gt;
+    </pre>
+                <div class="order-items">
+                    <h2>Ordered HTML List - The Type Attribute</h2>
+                    <p>The type attribute of the <code>&lt;ol&gt;</code> tag, defines the type of the list item marker:</p>
+                    <h2>Ordered List Type Attribute</h2>
+                    <table border="1" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>type="1"</td>
+                            <td>The list items will be numbered with numbers (default)</td>
+                        </tr>
+                        <tr>
+                            <td>type="A"</td>
+                            <td>The list items will be numbered with uppercase letters</td>
+                        </tr>
+                        <tr>
+                            <td>type="a"</td>
+                            <td>The list items will be numbered with lowercase letters</td>
+                        </tr>
+                        <tr>
+                            <td>type="I"</td>
+                            <td>The list items will be numbered with uppercase Roman numbers</td>
+                        </tr>
+                        <tr>
+                            <td>type="i"</td>
+                            <td>The list items will be numbered with lowercase Roman numbers</td>
+                        </tr>
+                    </table>   
+                    <div class="type-example">
+                        <h3>Example-Number:</h3>
+    <pre>
+        <code>
+        &lt;ol type="1"&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+        &lt;/ol&gt;
+        </code>
+    </pre>
+                    </div>    
+                </div>
+                <strong>Note: There are times when a row can have less or more cells than another. You will learn about that in a later chapter.</strong>
+              </div>
+            </div>
+    
+            <div id="classes" class="content">
+                <div class="example">
+                    <h1>HTML class Attribute</h1>
+                    <p>The HTML class attribute is used to specify a class for an HTML element.</p>
+                    <p>Multiple HTML elements can share the same class.</p>
+                </div>
+                <div class="unordered-list">
+                    <h1>Using The class Attribute</h1>
+                    <p>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+                </div>
+                <div class="ordered-list">
+                    <h2>Classes-Example:</h2>
+    <pre>
+        <code>
+    &lt;h2 class="city main"&gt;London&lt;/h2&gt;
+    &lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+    &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+        </code>
+    </pre>
+                </div>
+                
+                <div class="ordered-list">
+                    <strong>tip: The class attribute can be used on any HTML element.</strong>
+                    <strong>Note: The class name is case sensitive!</strong>
+                </div>
+            </div>
+    
+            <div id="id" class="content">
+                <div class="example">
+                    <h1>HTML id Attribute</h1>
+                    <p>The HTML id attribute is used to specify a unique id for an HTML element. <br>You cannot have more than one element with the same id in an HTML document.</p>
+                </div>
+                <div class="ordered-list">
+                    <h1>Using The id Attribute</h1>
+                    <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.</p>
+                    <p>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.</p>
+                    <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</p>
+                    <p>In the following example we have an <code>&lt;h1&gt;</code> element that points to the id name "myHeader". This <code>&lt;h1&gt;</code> element will be styled according to the #myHeader style definition in the head section:</p>
+                </div>
+                <div class="ordered-list">
+                    <h1>Difference Between Class and ID</h1>
+                    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+                </div>
+                <div class="ordered-list">
+                    <h2>ID-Example:</h2>
+                    <pre>
+                        <code>
+    &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="ordered-list">
+                    <strong>Note: The id name is case sensitive!</strong>
+                    <strong>Note: The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</strong>
+                </div>
+            </div>
+    
+            <div id="form" class="content">
+                <div class="example">
+                    <div class="ordered-list">
+                        <h1>HTML Forms</h1>
+                        <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+                    </div>
+        
+                    <div class="ordered-list">
+                        <p>The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input.</p>
+                        <pre>
+                            <code>
+    &lt;form&gt;
+    .
+    form elements
+    .
+    &lt;/form&gt;
+                            </code>
+                        </pre>
+                        <p>The <code>&lt;form&gt;</code> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+                    </div>
+        
+                    <div class="ordered-list">
+                        <h1>Form Type:</h1>
+                        <table border="1" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;input type="text"&gt;</td>
+                                <td>Displays a single-line text input field</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input type="radio"&gt;</td>
+                                <td>Displays a radio button (for selecting one of many choices)</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input type="checkbox"&gt;</td>
+                                <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input type="submit"&gt;</td>
+                                <td>Displays a submit button (for submitting the form)</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input type="button"&gt;</td>
+                                <td>Displays a clickable button</td>
+                            </tr>
+                        </table>                
+                    </div>
+        
+                    <div class="ordered-list">
+                        <h1>Text Fields</h1>
+                        <p>The <code>&lt;input type="text"&gt;</code> defines a single-line input field for text input.</p>
+                        <div class="ordered-list">
+                            <h2>Example</h2>
+                            <p>A form with input fields for text:</p>
+                            <pre>
+                                <code>
+    &lt;form&gt;
+        &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt; 
+        &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; 
+        &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt; 
+        &lt;input type="text" id="lname" name="lname"&gt; 
+    &lt;/form&gt;
+                                </code>
+                            </pre>
+                        <strong>Note: The form itself is not visible. Also note that the default width of an input field is 20 characters.</strong>
+                        </div>
+                    </div>
+        
+                    <div class="ordered-list">
+                        <h1>The <code>&lt;label&gt;</code> Element</h1>
+                        <p>Notice the use of the <code>&lt; label&gt;</code> element in the example above.</p>
+                        <div class="label-way">
+                            <p>The <code>&lt;label&gt;</code> tag defines a label for many form elements.</p>
+                            <p>The <code>&lt;label&gt;</code> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</p>
+                            <p>The <code>&lt;label&gt;</code> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <code>&lt;label&gt;</code> element, it toggles the radio button/checkbox.</p>
+                            <p>The for attribute of the <code>&lt;label&gt;</code> tag should be equal to the id attribute of the <code>&lt;input&gt;</code> element to bind them together.</p>
+                        </div>
+                    </div>
+                    <div class="ordered-list">
+                        <h1>Radio Buttons</h1>
+                        <p>The <code>&lt;input type="radio"&gt;</code> defines a radio button.</p>
+                        <p>Radio buttons let a user select ONE of a limited number of choices.</p>
+                        <div class="radio-example">
+                            <h2>Example</h2>
+                            <p>A form with radio buttons:</p>
+                            <pre>
+                                <code>
+    &lt;form&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;html&quot; name=&quot;fav_language&quot; value=&quot;HTML&quot;&gt;
+        &lt;label for=&quot;html&quot;&gt;HTML&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;css&quot; name=&quot;fav_language&quot; value=&quot;CSS&quot;&gt;
+        &lt;label for=&quot;css&quot;&gt;CSS&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;javascript&quot; name=&quot;fav_language&quot; value=&quot;JavaScript&quot;&gt;
+        &lt;label for=&quot;javascript&quot;&gt;JavaScript&lt;/label&gt;
+    &lt;/form&gt;
+                                </code>
+                            </pre>
+            
+                        </div>
+                    </div>
+        
+                    <div class="ordered-list">
+                        <h1>Checkboxes</h1>
+                        <p>The <code>&lt;input type="checkbox"&gt;</code> defines a checkbox.</p>
+                        <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+                        <div class="checkbox-example">
+                            <h2>Example</h2>
+                            <p>A form with checkboxes:</p>
+                            <pre>
+                                <code>
+    &lt;form&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;vehicle1&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot;&gt;
+        &lt;label for=&quot;vehicle1&quot;&gt; I have a bike&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;vehicle2&quot; name=&quot;vehicle2&quot; value=&quot;Car&quot;&gt;
+        &lt;label for=&quot;vehicle2&quot;&gt; I have a car&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;vehicle3&quot; name=&quot;vehicle3&quot; value=&quot;Boat&quot;&gt;
+        &lt;label for=&quot;vehicle3&quot;&gt; I have a boat&lt;/label&gt;
+    &lt;/form&gt;
+                                </code>
+                            </pre>
+            
+                        </div>
+                    </div>
+        
+                    <div class="ordered-list">
+                        <h1>The Submit Button</h1>
+                        <p>The <code>&lt;input type="submit"&gt;</code> defines a button for submitting the form data to a form-handler.</p>
+                        <p>The form-handler is typically a file on the server with a script for processing input data.<br>The form-handler is specified in the form's action attribute.</p>
+                        <div class="submit-example">
+                            <h2>Example</h2>
+                            <p>A form with a submit button:</p>
+                            <pre>
+                                <code>
+    &lt;form action=&quot;/action_page.php&quot;&gt;
+        &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; value=&quot;John&quot;&gt;&lt;br&gt;
+        &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/form&gt;
+                                </code>
+                            </pre>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="divtag" class="content">
+                <div class="example">
+                    <h1>HTML Div</h1>
+                    <p>A <code>&lt;div&gt;</code> section in a document that is styled with CSS</p>
+                </div>
+                <div class="ordered-list">
+                    <h1>Example</h1>
+                    <p>A <code>&lt;div&gt;</code> section in a document that is styled with CSS:</p>
+    <pre><code>
+    &lt;html&gt; 
+    &lt;head&gt;
+    &lt;style&gt;
+    .myDiv {
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;div class="myDiv"&gt;
+        &lt;h2&gt;This is a heading in a div element&lt;/h2&gt;
+        &lt;p&gt;This is some text in a div element.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+                </div>
+                <div class="div-des">
+                    <h1>Definition and Usage</h1>
+                    <p>The <<code>&lt;div&gt;</code>> tag defines a division or a section in an HTML document.</p>
+                    <p>The <code>&lt;div&gt;</code> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.</p>
+                    <p>The <code>&lt;div&gt;</code> tag is easily styled by using the class or id attribute.</p>
+                    <p>Any sort of content can be put inside the <code>&lt;div&gt;</code> tag!</p>
+                </div>
+                <strong>Note: By default, browsers always place a line break before and after the <code>&lt;div&gt;</code> element.</strong>
+            </div>
+    
+            <div id="table" class="content">
+                <div class="example">
+                    <h1>HTML Table</h1>
+                    <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+                    <p>A table in HTML consists of table cells inside rows and columns.</p>
+                    <div class="table-example">
+                        <h1>Example</h1>
+                        <p>A simple HTML table</p>
+    <pre><code>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Company&lt;/th&gt;
+            &lt;th&gt;Contact&lt;/th&gt;
+            &lt;th&gt;Country&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+            &lt;td&gt;Maria Anders&lt;/td&gt;
+            &lt;td&gt;Germany&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+            &lt;td&gt;Francisco Chang&lt;/td&gt;
+            &lt;td&gt;Mexico&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </code></pre>                        
+                    </div>
+                </div>
+                <div class="table-cells">
+                    <h1>Table Cells</h1>
+                    <p>Each table cell is defined by a <code>&lt;td&gt;</code>,<code>&lt;/td&gt;</code> tag and <code>&lt;tr&gt;</code> and<code>&lt;/tr&gt;</code> tag.</p>
+                    <div class="cells-example">
+                        <h1>Example</h1>
+    <pre><code>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </code></pre>
+                    </div>
+                    <div class="table-header">
+                        <h1>Table Headers</h1>
+                        <p>th stands for table header</p>
+                        <p>Sometimes you want your cells to be table header cells. In those cases use the <code>&lt;th&gt;</code> tag instead of the  <code>&lt;td&gt;</code>tag:</p>
+                        <div class="header-example">
+                            <h1>Example</h1>
+    <pre><code>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;td&gt;Jill&lt;/td&gt;
+            &lt;td&gt;Eve&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;td&gt;Smith&lt;/td&gt;
+            &lt;td&gt;Jackson&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;td&gt;94&lt;/td&gt;
+            &lt;td&gt;50&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </code></pre>                            
+                        </div>
+                    </div>
+                    <h3>By default, the text in <code>&lt;th&gt;</code> elements are bold and centered, but you can change that with CSS.</h3>
+                    <div class="table-cols">
+                        <h1>Table Cols / Table Data</h1>
+                        <p>td stands for table data.</p>
+                        <p>Everything between <<code>&lt;td&gt;</code> and <code>&lt;/td&gt;</code> are the content of the table cell.</p>
+                    </div>
+                    <strong>Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.</strong>
+                    <div class="table-rows">
+                        <h1>Table Rows</h1>
+                        <p>tr stands for table row.</p>
+                        <p>Each table row starts with a <code>&lt;tr&gt;</code> and ends with a <code>&lt;/tr&gt;</code> tag.</p>
+                        <div class="row-example">
+    <pre><code>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </code></pre>
+                        </div>
+                    </div>
+                    <strong>Note: There are times when a row can have less or more cells than another. You will learn about that in a later chapter.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
