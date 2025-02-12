@@ -54,8 +54,9 @@
             <a href="javascript:void(0);" onclick="showContent('page5')">Border</a>
             <a href="javascript:void(0);" onclick="showContent('page6')">justify-content</a>
             <a href="javascript:void(0);" onclick="showContent('page7')"> justify-seft</a>
-           
-            <a href="javascript:void(0);" onclick="showContent('content')">Page 10</a>
+            <a href="javascript:void(0);" onclick="showContent('page8')">align-iteam</a>
+            <a href="javascript:void(0);" onclick="showContent('content')">content</a>
+            
         </div>
         
         <div class="main">
@@ -383,12 +384,24 @@ body {
             <div id="page3" class="content">
               <h1>CSS Margins</h1>
               <p>Margins are used to create space around elements, outside of any defined borders.</p>
-              <p>The margin property is a shorthand property for the following individual margin properties:</p>
+              <!-- <p>The margin property is a shorthand property for the following individual margin properties:</p> -->
+              <h2>Margin - Individual Sides</h2>
+              <h4>CSS has properties for specifying the margin for each side of an element:</h4>
               <div class="content-text">
                 <li><a href="">margin-top</a></li>
                 <li><a href="">margin-right</a></li>
                 <li><a href="">margin-bottom</a></li>
                 <li><a href="">margin-left</a></li>
+              </div>
+              <div class="content-text">
+                <h4>All the margin properties can have the following values:</h4>
+                <ul> 
+                  <li> <a href="">auto </a> -  the browser calculates the margin. </li>
+                  <li><a href="">length</a> -   specifies a margin in px, pt, cm, etc.</li>
+                  <li>  <a href="">% </a>  - specifies a margin in % of the width of the containing element</li>
+                  <li><a href="">initial</a> - inherit - specifies that the margin should be inherited from the parent element.</li>
+            
+                </ul>
               </div>
       
               <!-- Margin Example 1 -->
@@ -567,13 +580,25 @@ body {
             <div id="page4" class="content">
               <h1>CSS Padding</h1>
               <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
-              <p>CSS has properties for specifying the padding for each side of an element:</p>
+              <h2>Padding - Individual Sides</h2>
+              <h4>CSS has properties for specifying the padding for each side of an element:</h4>
               <div class="content-text">
-                <li>Padding-top</li>
-                <li>Padding-right</li>
-                <li>Padding-bottom</li>
-                <li>Padding-left</li>
+                <li><a href="">Padding-top</a></li>
+                <li><a href="">Padding-rightt</a></li>
+                <li><a href="">Padding-bottom</a></li>
+                <li><a href="">Padding-left</a></li>
               </div>
+             
+              <div class="content-text">
+                <h4>All the padding properties can have the following values:</h4>
+                <ul> 
+                  <li><a href="">length</a> -   specifies a padding in px, pt, cm, etc.</li>
+                  <li>  <a href="">% </a>  -  specifies a padding in % of the width of the containing element</li>
+                  <li><a href="">initial</a> -inherit - specifies that the padding should be inherited from the parent element</li>
+            
+                </ul>
+              </div>
+
               <div class="cardcontainer">
                   <h5>Padding Example 1</h5>
                   <div class="cardcontent">
@@ -757,7 +782,7 @@ body {
             
             <!-- Border-->
             <div id="page5" class="content">
-              <h1>Welcome to Page 6</h1>
+              <h1>Welcome to Border page</h1>
               <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
               <p>The border-style property specifies what kind of border to display.</p>
               <br>
@@ -878,16 +903,12 @@ body {
                     &lt;html&gt;
                     &lt;head&gt;
                     &lt;style&gt;
-                      div {
-                        border: 1px solid black;
-                        padding-bottom: 50px;
-                        background-color: lightyellow;
-                      }
+                      p.dotted {border-style: dashed;}
                     &lt;/style&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                    &lt;h2&gt;The padding shorthand property - 1 value&lt;/h2&gt;
-                    &lt;div&gt;This div element has a padding-bottom of 50px.&lt;/div&gt;
+                    &lt;h2&gt;The border-style Property&lt;/h2&gt;
+                    &lt;p class=&quot;dashed&quot;&gt;A dashed border.&lt;/p&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
                   </pre>
@@ -927,8 +948,6 @@ body {
               <h1>CSS justify Property</h1>
               <h4>The justify-content property aligns the flexible container's items when the items do not use all available
                   space on the main-axis (horizontally)</h4>
-      
-      
               <div class="content-text">
                   <ul>
                       <h3>🛑 Note</h3>
@@ -941,7 +960,6 @@ body {
       
                   </ul>
               </div>
-             
               <table class="table table-hover">
                   <h2> Property Values</h2>
                   <thead>
@@ -980,95 +998,89 @@ body {
               </table>
               <!--justify-content: flex-start; -->
               <div class="cardcontainer">
-                  <!-- <h5> Auto</h5> -->
-                  <h5>EX:justify-content: flex-start;</h5>
-                  <div class="cardcontent">
+                <h5>EX:justify-content: flex-start;</h5>
+                <div class="cardcontent">
+                  <div class="bothCard cardRgiht">
       
-                      <div class="bothCard cardRgiht">
-      
-                          <pre>
-      <p>
-      &lt;!DOCTYPE html&gt;
-      &lt;html&gt;
-      &lt;head&gt;
-      &lt;style&gt; 
-      #main {
-      width: 400px;
-      height: 100px;
-      border: 1px solid #c3c3c3;
-      display: flex;
-      justify-content: flex-start;
-      }
-      #main div {
-      width: 70px;
-      height: 70px;
-      }
-      &lt;/style&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-      &lt;h1&gt;The justify-content Property&lt;/h1&gt;
-      &lt;p&gt;The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is default):&lt;/p&gt;
-      &lt;div id=&quot;main&quot;&gt;
-      &lt;div style=&quot;background-color:coral;&quot;&gt;1&lt;/div&gt;
-      &lt;div style=&quot;background-color:lightblue;&quot;&gt;2&lt;/div&gt;
-      &lt;div style=&quot;background-color:pink;&quot;&gt;3&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/body&gt;
-      &lt;/html&gt;
-      </p></pre>
-                      </div>
-                      <div class="bothCard cardLeft">
-                          <img id="img-small-size" src="../imges/justify-content-flex-start.png" alt="">
-                      </div>
+                      <pre>
+                  <p>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  &lt;head&gt;
+                  &lt;style&gt; 
+                  #main {
+                  width: 400px;
+                  height: 100px;
+                  border: 1px solid #c3c3c3;
+                  display: flex;
+                  justify-content: flex-start;
+                  }
+                  #main div {
+                  width: 70px;
+                  height: 70px;
+                  }
+                  &lt;/style&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                  &lt;h1&gt;The justify-content Property&lt;/h1&gt;
+                  &lt;p&gt;The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is default):&lt;/p&gt;
+                  &lt;div id=&quot;main&quot;&gt;
+                  &lt;div style=&quot;background-color:coral;&quot;&gt;1&lt;/div&gt;
+                  &lt;div style=&quot;background-color:lightblue;&quot;&gt;2&lt;/div&gt;
+                  &lt;div style=&quot;background-color:pink;&quot;&gt;3&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                  </p></pre>
                   </div>
-              </div>
-                      <!-- justify-content: flex-end;-->
-              <div class="cardcontainer">
-                  <!-- <h5> Auto</h5> -->
-                  <h5>EX:justify-content: flex-end;</h5>
-                  <div class="cardcontent">
-      
-                      <div class="bothCard cardRgiht">
-      
-                          <pre>
-      <p>
-      &lt;!DOCTYPE html&gt;
-      &lt;html&gt;
-      &lt;style&gt; 
-      #main {
-      width: 400px;
-      height: 100px;
-      border: 1px solid #c3c3c3;
-      display: flex;
-      justify-content: flex-end;
-      }
-      #main div {
-      width: 70px;
-      height: 70px;
-      }
-      &lt;/style&gt;
-      &lt;body&gt;
-      &lt;h1&gt;The justify-content Property&lt;/h1&gt;
-      &lt;p&gt;The &quot;justify-content: flex-end;&quot; aligns the flex items at the end of the container:&lt;/p&gt;
-      &lt;div id=&quot;main&quot;&gt;
-      &lt;div style=&quot;background-color:coral;&quot;&gt;1&lt;/div&gt;
-      &lt;div style=&quot;background-color:lightblue;&quot;&gt;2&lt;/div&gt;
-      &lt;div style=&quot;background-color:pink;&quot;&gt;3&lt;/div&gt;
-      &lt;/div&gt;  
-      &lt;/body&gt;
-      &lt;/html&gt;
-      </p></pre>
+                    <div class="bothCard cardLeft">
+                      <img id="img-small-size" src="../imges/justify-content-flex-start.png" alt="">
+                        </div>
+                          </div>
+                          </div>
+                          <!-- justify-content: flex-end;-->
+                          <div class="cardcontainer">
+                              <h5>EX:justify-content: flex-end;</h5>
+                              <div class="cardcontent">
+                  
+                                  <div class="bothCard cardRgiht">
+                  
+                                      <pre>
+                  <p>
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  &lt;style&gt; 
+                  #main {
+                  width: 400px;
+                  height: 100px;
+                  border: 1px solid #c3c3c3;
+                  display: flex;
+                  justify-content: flex-end;
+                  }
+                  #main div {
+                  width: 70px;
+                  height: 70px;
+                  }
+                  &lt;/style&gt;
+                  &lt;body&gt;
+                  &lt;h1&gt;The justify-content Property&lt;/h1&gt;
+                  &lt;p&gt;The &quot;justify-content: flex-end;&quot; aligns the flex items at the end of the container:&lt;/p&gt;
+                  &lt;div id=&quot;main&quot;&gt;
+                  &lt;div style=&quot;background-color:coral;&quot;&gt;1&lt;/div&gt;
+                  &lt;div style=&quot;background-color:lightblue;&quot;&gt;2&lt;/div&gt;
+                  &lt;div style=&quot;background-color:pink;&quot;&gt;3&lt;/div&gt;
+                  &lt;/div&gt;  
+                  &lt;/body&gt;
+                  &lt;/html&gt;
+                  </p></pre>
                       </div>
                       <div class="bothCard cardLeft">
                           <img id="img-small-size" src="../imges/justify-content-flex-end.png" alt="">
                       </div>
                   </div>
-              </div>
-      
-      
-                          <!-- justify-content: space-between;-->
+                </div>
+              <!-- justify-content: space-between;-->
               <div class="cardcontainer">
-                  <!-- <h5> Auto</h5> -->
                   <h5>EX:justify-content: space-between;</h5>
                   <div class="cardcontent">
       
@@ -1109,9 +1121,8 @@ body {
                   </div>
       
               </div>
-                              <!-- justify-content: space-around;-->
+              <!-- justify-content: space-around;-->
               <div class="cardcontainer">
-                      <!-- <h5> Auto</h5> -->
                       <h5>EX:justify-content: space-around;</h5>
                       <div class="cardcontent">
       
@@ -1154,13 +1165,8 @@ body {
                       <div class="bothCard cardLeft">
                           <img id="img-small-size" src="../imges/justify-content-space-between.png" alt="">
                       </div>
-                  </div>
-      
-                  
-                          
-                      
+                  </div>  
               </div>
-             
             </div>
           <div id="page7" class="content">
             <h1>CSS justify-sef</h1>
@@ -1223,111 +1229,111 @@ body {
             
               <div class="cardcontent">
                 <div class="bothCard cardRgiht">
-<pre>
-<p>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;style&gt; 
-#container {
-  width: 50%;
-  aspect-ratio: 2/1;
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
+                <pre>
+                <p>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;style&gt; 
+                #container {
+                  width: 50%;
+                  aspect-ratio: 2/1;
+                  border: 1px solid black;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  justify-items: center;
+                }
 
-#container &gt; div {
-  border: 1px solid black;
-}
-.blue {
-  background-color: lightblue;
-  width: 50%;
-  justify-self: right;
-}
-.red {
-  background-color: coral;
-  width: 40%;
-}
-.green {
-  background-color: lightgreen;
-  width: 60%;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h2&gt;justify-items vs. justify-self&lt;/h2&gt;
-&lt;div id=&quot;container&quot;&gt;
-  &lt;div class=&quot;red&quot;&gt;RED&lt;/div&gt;
-  &lt;div class=&quot;blue&quot;&gt;BLUE&lt;/div&gt;
-  &lt;div class=&quot;green&quot;&gt;GREEN&lt;/div&gt;
-  &lt;div class=&quot;red&quot;&gt;RED&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</p></pre>
+                #container &gt; div {
+                  border: 1px solid black;
+                }
+                .blue {
+                  background-color: lightblue;
+                  width: 50%;
+                  justify-self: right;
+                }
+                .red {
+                  background-color: coral;
+                  width: 40%;
+                }
+                .green {
+                  background-color: lightgreen;
+                  width: 60%;
+                }
+                &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h2&gt;justify-items vs. justify-self&lt;/h2&gt;
+                &lt;div id=&quot;container&quot;&gt;
+                  &lt;div class=&quot;red&quot;&gt;RED&lt;/div&gt;
+                  &lt;div class=&quot;blue&quot;&gt;BLUE&lt;/div&gt;
+                  &lt;div class=&quot;green&quot;&gt;GREEN&lt;/div&gt;
+                  &lt;div class=&quot;red&quot;&gt;RED&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </p></pre>
                 </div>
-                <div class="bothCard cardLeft">
-                   <img src="../imges/justify-self-right.png" alt="">
-                </div>
-                </div>
-              </div>
+                  <div class="bothCard cardLeft">
+                    <img src="../imges/justify-self-right.png" alt="">
+                      </div>
+                      </div>
+                  </div>
 
               <div class="cardcontainer">
                 <h3>justify-self: left</h3>
               
                 <div class="cardcontent">
                   <div class="bothCard cardRgiht">
-<pre>
-<p>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Justify Self Example&lt;/title&gt;
-&lt;style&gt;
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    h1 {
-        text-align: center;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns */
-        gap: 10px;
-    }
-    .box {
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-    }
-    .red {
-        background-color: red;
-        justify-self: start; 
-    }
-    .blue {
-        background-color: blue;
-        justify-self: end; 
-    }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Justify Self Example&lt;/h1&gt;
-&lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;box red&quot;&gt;RED&lt;/div&gt;
-    &lt;div class=&quot;box blue&quot;&gt;BLUE&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</p>
-</pre>
+            <pre>
+            <p>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Justify Self Example&lt;/title&gt;
+            &lt;style&gt;
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                h1 {
+                    text-align: center;
+                }
+                .container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; /* Two columns */
+                    gap: 10px;
+                }
+                .box {
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: bold;
+                }
+                .red {
+                    background-color: red;
+                    justify-self: start; 
+                }
+                .blue {
+                    background-color: blue;
+                    justify-self: end; 
+                }
+            &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Justify Self Example&lt;/h1&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;box red&quot;&gt;RED&lt;/div&gt;
+                &lt;div class=&quot;box blue&quot;&gt;BLUE&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </p>
+            </pre>
                   </div>
                   <div class="bothCard cardLeft">
                      <img src="../imges/justify-self-left.png" alt="">
@@ -1337,9 +1343,111 @@ body {
           </div>
 
           <div id="page8" class="content">
-              <h1>Welcome to Page 8</h1>
-              <p>This is the content of the eighth page.</p>
-          </div>
+            <h1>Welcome to align-iteam</h1>
+            <ul>
+              <li>The align-items property specifies the default alignment for items inside a flexbox or grid container.</li>
+            </ul>
+            <table class="table table-hover">
+              <h2> Property Values</h2>
+               <thead>
+                 <tr>
+                   <th>Value</th>
+                   <th>Description</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><span>normal</span></td>
+                   <td>	Default. Behaves like 'stretch' for flexbox and grid items, or 'start' for grid items with a defined block size.</td>
+                  </tr>
+                  <tr>
+                    <td><span>stretch	</span></td>
+                    <td>Items are stretched to fit the container</td>
+                  </tr>
+                  <tr>
+                    <td><span>center</span></td>
+                    <td> 	Items are positioned at the center of the container</td>
+                  </tr>
+                  <tr>
+                    <td><span>flex-start</span></td>
+                    <td>	Items are positioned at the beginning of the container</td>
+                  </tr>
+                  <tr>
+                    <td><span>flex-end</span></td>
+                    <td>	Items are positioned at the end of the container</td>
+                  </tr>
+                  <tr>
+                    <td><span>start</span></td>
+                    <td> 	Items are positioned at the beginning of their individual grid cells, in the block direction</td>
+                  </tr>
+                  <tr>
+                    <td><span>end	</span></td>
+                    <td>end	Items are positioned at the end of the their individual grid cells, in the block direction</td>
+                  </tr>
+                  <tr>
+                    <td><span>baseline</span></td>
+                    <td> 	Items are positioned at the baseline of the container</td>
+                  </tr>
+                  <tr>
+                    <td><span>initial</span></td>
+                    <td> 	Sets this property to its default value. Read about initial</td>
+                  </tr>
+                  <tr>
+                    <td><span>inherit</span></td>
+                    <td> 	Inherits this property from its parent element. Read about inherit</td>
+                  </tr>
+                  
+               </tbody>
+              </table>
+            <!-- ALIGN ITEAM -->
+            <div class="cardcontainer">
+                <h5>EX:align-iteam;</h5>
+                <div class="cardcontent">
+    
+                    <div class="bothCard cardRgiht">
+    
+                        <pre>
+              <p>
+                &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;style&gt; 
+                    #main {
+                      width: 220px;
+                      height: 300px;
+                      border: 1px solid black; 
+                      display: flex;
+                      align-items: center;
+                    }
+                    
+                    #main div {
+                      flex: 1;
+                      border: 1px solid black;
+                      display: flex;
+                      align-items: center;
+                    }
+                    &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                    &lt;h2&gt;align-items: center&lt;/h2&gt;
+                    
+                    &lt;div id=&quot;main&quot;&gt;
+                      &lt;div style=&quot;background-color:coral;min-height:30px;&quot;&gt;RED&lt;/div&gt;
+                      &lt;div style=&quot;background-color:lightblue;min-height:50px;&quot;&gt;BLUE&lt;/div&gt;  
+                      &lt;div style=&quot;background-color:lightgreen;min-height:190px;&quot;&gt;Green div with more content.&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+              </p></pre>
+                    </div>
+                    <div class="bothCard cardLeft">
+                        <img id="img-small-size" src="../imges/alidn2.png" alt="">
+                    </div>
+                </div>
+            </div>       
+            </div>
             <!-- Page 9 -->
           <div id="page9" class="content">
               <h1>Welcome to Page 9</h1>
@@ -1456,6 +1564,8 @@ body {
                   </div>
                 </div>
             </div>
+          </div>
+          </div>
         </div>
     </div>
 </body>
